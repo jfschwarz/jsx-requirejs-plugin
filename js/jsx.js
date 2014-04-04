@@ -47,7 +47,7 @@ define(['JSXTransformer', 'text'], function (JSXTransformer, text) {
           buildMap[name] = content;
         } else {
           content += "\n//# sourceURL=" + location.protocol + "//" + location.hostname +
-            config.baseUrl + name + ".jsx";
+            config.baseUrl + name + fileExtension;
         }
 
         onLoadNative.fromText(content);
